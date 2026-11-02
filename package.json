@@ -1,0 +1,22 @@
+{
+  "name": "@local/dsh-orchestrator-preset",
+  "version": "1.5.0",
+  "private": true,
+  "type": "module",
+  "description": "An Orchestration agent preset whose main agent delegates with subagent, follows up with send_message, interrupts with interrupt_agent, lists its children with list_agents, plans with todo_write, asks the user through ask_user_question, and manages one persisted goal.",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" }
+  }
+}
