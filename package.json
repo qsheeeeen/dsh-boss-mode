@@ -2,6 +2,7 @@
   "name": "@local/dsh-orchestrator-preset",
   "version": "1.5.1",
   "private": true,
+  "license": "MIT",
   "type": "module",
   "description": "A Boss mode (老板模式) agent preset: the main agent only gives orders. It delegates with subagent, follows up with send_message, interrupts with interrupt_agent, lists children with list_agents, plans with todo_write, asks the user through ask_user_question, and manages one persisted goal.",
   "exports": {

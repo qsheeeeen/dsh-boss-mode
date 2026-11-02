@@ -99,8 +99,9 @@ cordis.patch.yml    the Boss-mode preset declaration (system prompt lives here)
 index.js            the preset-scoped global-tool mask
 locale/{en,zh}.json plugin-page title and description
 icon.svg            icon
+LICENSE             MIT license text
 ```
 
 ## License
 
-No license file is included yet. Add one before distributing the package if you want others to reuse it.
+[MIT](LICENSE) © 2026 Q S.
