@@ -1,4 +1,4 @@
-# dsh-boss-mode
+# Boss Mode for DeepSeek Harness
 
 **Boss mode** for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): the main agent never touches files. It plans, delegates, follows up, and verifies while subagents do all the work.
 
