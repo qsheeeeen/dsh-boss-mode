@@ -1,6 +1,6 @@
 # One agent preset: delegation-only orchestration.
 #
-#   orchestrator  The main agent, shown in the mode picker as 编排模式. Its
+#   orchestrator  The main agent, shown in the mode picker as 老板模式. Its
 #                 system prompt is a complete replacement (`complete: true`) and
 #                 its tools are all about running the work: `subagent` starts a
 #                 child, `send_message` continues one, `interrupt_agent` stops
@@ -16,16 +16,16 @@
 # every declaration to the mode picker and `agentPreset` can only name a
 # declared preset, so a private "worker" mode would necessarily become
 # user-selectable. Reusing `standard` keeps the picker to two entries: 标准模式
-# (the default) and 编排模式.
+# (the default) and 老板模式.
 
 - insert:
     - id: preset-orchestrator
       name: '@deepseek-ai/dsh-agent-preset'
       config:
         id: orchestrator
-        name: 编排模式
+        name: 老板模式
         description: >-
-          主 Agent 不直接读写文件，把任务拆给子 Agent 执行，负责计划、追问和验收。
+          主 Agent 像老板一样只下命令不动手：把任务拆给子 Agent，负责追问、打断和验收。
           适合需要并行推进或跨多轮持续跟进的多步任务。
         order: 5
         plugins:

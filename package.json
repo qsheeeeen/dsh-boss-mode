@@ -1,9 +1,9 @@
 {
   "name": "@local/dsh-orchestrator-preset",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "private": true,
   "type": "module",
-  "description": "An Orchestration agent preset whose main agent delegates with subagent, follows up with send_message, interrupts with interrupt_agent, lists its children with list_agents, plans with todo_write, asks the user through ask_user_question, and manages one persisted goal.",
+  "description": "A Boss mode (老板模式) agent preset: the main agent only gives orders. It delegates with subagent, follows up with send_message, interrupts with interrupt_agent, lists children with list_agents, plans with todo_write, asks the user through ask_user_question, and manages one persisted goal.",
   "exports": {
     ".": "./index.js",
     "./locale/*.json": "./locale/*.json",

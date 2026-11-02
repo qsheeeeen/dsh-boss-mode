@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Orchestration Mode Preset",
-    "description": "Adds an Orchestration mode: the main agent plans, delegates, follows up, and verifies instead of touching files itself, for multi-step work that runs in parallel or over many turns."
+    "title": "Boss Mode Preset",
+    "description": "Adds a Boss mode: the main agent only gives orders — it plans, delegates, follows up, interrupts, and verifies instead of touching files itself."
   }
 }
