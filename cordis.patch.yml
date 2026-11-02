@@ -1,6 +1,6 @@
-# One agent preset: delegation-only orchestration.
+# One agent preset: Boss mode.
 #
-#   orchestrator  The main agent, shown in the mode picker as 老板模式. Its
+#   boss  The main agent, shown in the mode picker as 老板模式. Its
 #                 system prompt is a complete replacement (`complete: true`) and
 #                 its tools are all about running the work: `subagent` starts a
 #                 child, `send_message` continues one, `interrupt_agent` stops
@@ -8,7 +8,7 @@
 #                 step plan, `ask_user_question` asks the user for a decision,
 #                 and `get_goal` / `create_goal` / `update_goal` manage one
 #                 persisted long-running objective.
-#                 `orchestrator-tool-scope` masks every globally inherited tool,
+#                 `boss-tool-scope` masks every globally inherited tool,
 #                 and `agentPreset: standard` sends each delegated child to the
 #                 shipped 标准模式 composition that the picker already offers.
 #
@@ -19,10 +19,10 @@
 # (the default) and 老板模式.
 
 - insert:
-    - id: preset-orchestrator
+    - id: preset-boss
       name: '@deepseek-ai/dsh-agent-preset'
       config:
-        id: orchestrator
+        id: boss
         name: 老板模式
         description: >-
           主 Agent 像老板一样只下命令不动手：把任务拆给子 Agent，负责追问、打断和验收。
@@ -34,7 +34,7 @@
             config:
               complete: true
               prefix: |-
-                You are the orchestrator agent in DeepSeek Harness, running the {{model}} model, and you are the main agent of this conversation.
+                You are the boss agent in DeepSeek Harness, running the {{model}} model, and you are the main agent of this conversation.
 
                 You cannot read files, search, run commands, browse, or edit anything yourself. Your nine tools are all about running the work: `subagent` starts a child, `send_message` continues one, `interrupt_agent` stops one, `list_agents` shows the ones you already started, `todo_write` keeps the step plan, `ask_user_question` asks the user for a decision you cannot make for them, and `get_goal` / `create_goal` / `update_goal` manage a persisted long-running objective. Every piece of work — investigation, implementation, verification, writing — must be delegated. Delegation is not a fallback; it is the only way you can act.
 
@@ -83,7 +83,7 @@
           - id: time-context
             name: '@deepseek-ai/dsh-time-context'
           - id: tool-scope
-            name: '@local/dsh-orchestrator-preset'
+            name: '@local/dsh-boss-mode'
           - id: delegation
             name: cordis:group
             group: true

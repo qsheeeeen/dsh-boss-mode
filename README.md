@@ -2,7 +2,7 @@
 
 **Boss mode** for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): the main agent never touches files. It plans, delegates, follows up, and verifies while subagents do all the work.
 
-Adds one card to the mode picker: `老板模式` (id `orchestrator`). Built-in modes are unchanged.
+Adds one card to the mode picker: `老板模式` (id `boss`). Built-in modes are unchanged.
 
 ## Install
 
@@ -20,7 +20,7 @@ Children are durable and resume with `send_message` (delivery only — the answe
 
 ## Customize
 
-The system prompt is `persona.prefix` under `preset-orchestrator` in `cordis.patch.yml` (`complete: true`). Reinstall and restart DSH after editing. `index.js` masks the Host's globally registered tools.
+The system prompt is `persona.prefix` under `preset-boss` in `cordis.patch.yml` (`complete: true`). Reinstall and restart DSH after editing. `index.js` masks the Host's globally registered tools.
 
 ## License
 

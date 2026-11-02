@@ -1,5 +1,5 @@
 /**
- * Orchestrator tool scope.
+ * Boss mode tool scope.
  *
  * A preset can compose the tools its agents add, but it cannot delete the tools
  * the Host registers globally: every agent inherits those. The only two ways to
@@ -33,7 +33,7 @@ const PRESET_TOOL_NAMES = new Set([
   'update_goal',
 ])
 
-export const name = 'orchestrator-tool-scope'
+export const name = 'boss-tool-scope'
 
 export const inject = ['tools']
 

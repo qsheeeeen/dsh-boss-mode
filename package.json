@@ -1,6 +1,6 @@
 {
-  "name": "@local/dsh-orchestrator-preset",
-  "version": "1.5.1",
+  "name": "@local/dsh-boss-mode",
+  "version": "1.5.2",
   "private": true,
   "license": "MIT",
   "type": "module",
