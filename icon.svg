@@ -1,12 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Boss mode: one agent delegating to worker agents">
-  <rect width="64" height="64" rx="14" fill="#0f172a"/>
-  <g stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round">
-    <line x1="32" y1="22" x2="16" y2="41"/>
-    <line x1="32" y1="22" x2="32" y2="41"/>
-    <line x1="32" y1="22" x2="48" y2="41"/>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Boss mode">
+  <g stroke="#7CB7FF" stroke-width="2" stroke-linecap="round">
+    <path d="M18 14.5 9.8 24.8"/>
+    <path d="M18 14.5v10.3"/>
+    <path d="M18 14.5l8.2 10.3"/>
   </g>
-  <circle cx="32" cy="15" r="7" fill="#7dd3fc"/>
-  <circle cx="16" cy="46" r="5.5" fill="#22d3ee"/>
-  <circle cx="32" cy="46" r="5.5" fill="#22d3ee"/>
-  <circle cx="48" cy="46" r="5.5" fill="#22d3ee"/>
+  <circle cx="18" cy="9.5" r="5" fill="#145AF3"/>
+  <circle cx="9" cy="28" r="3.5" fill="#45D9E7"/>
+  <circle cx="18" cy="28" r="3.5" fill="#45D9E7"/>
+  <circle cx="27" cy="28" r="3.5" fill="#45D9E7"/>
 </svg>
